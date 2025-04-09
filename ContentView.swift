@@ -6,11 +6,7 @@ struct ContentView: View {
     @State var number2 = "number2"
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
+        
+        TextField("Enter a number",value: $number2, formatter: NumberFormatter())
     }
 }
